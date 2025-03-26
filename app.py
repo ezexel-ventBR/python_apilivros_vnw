@@ -1,8 +1,9 @@
 from flask import Flask, request, jsonify
-
+from flask_cors import CORS
 import sqlite3
 
 app = Flask(__name__)
+CORS(app)
 
 @app.route("/pague")
 def exiba_mensagem():
@@ -71,3 +72,6 @@ def listar_livros():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+# CORS -> Cross Origin Resource Sharing / Compartilhamento de recursos entre diferentes origens
+
