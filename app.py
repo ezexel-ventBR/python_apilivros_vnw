@@ -5,13 +5,9 @@ import sqlite3
 app = Flask(__name__)
 CORS(app)
 
-@app.route("/pague")
+@app.route("/")
 def exiba_mensagem():
-    return "<h2>Pagar as pessoas, faz bem as pessoas!!!</h2>"
-
-@app.route("/devedora")
-def mensagem_do_calote():
-    return "<h3>Pessoas que não pagam, é triste viu...</h3>"
+    return "<h2>Bem vindo(a) a API de livros Vai Na Web!!!</h2>"
 
 def init_db():
     with sqlite3.connect("database.db") as conn:
