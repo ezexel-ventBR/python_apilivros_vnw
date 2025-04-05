@@ -37,7 +37,7 @@ Endpoint para cadastrar um novo livro.
 **Formato de envio dos dados**
 ```json
 {
-    "titulo":"Herry Potter e a Ordem da Fênix",
+    "titulo":"Harry Potter e a Ordem da Fênix",
     "categoria":"Fantasia",
     "autor":"J. K. Rowling",
     "image_url":"https://m.media-amazon.com/images/I/81d6ESyPZwL._AC_UF1000,1000_QL80_.jpg"
